@@ -1,0 +1,18 @@
+{
+  "year": 2026,
+  "scoring": {
+    "star_baker": 3,
+    "handshakes": 2,
+    "technical_winner": 1,
+    "technical_last": -1
+  },
+  "draft": {
+    "first_pick": null,
+    "order": []
+  },
+  "teams": {
+    "graham": [],
+    "lauren": []
+  },
+  "weeks": []
+}

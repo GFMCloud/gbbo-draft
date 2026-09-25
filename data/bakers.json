@@ -1,0 +1,112 @@
+{
+  "bakers": [
+    {
+      "id": "clara",
+      "name": "Clara",
+      "age": 24,
+      "hometown": "Hertfordshire (originally from Aveiro, Portugal)",
+      "occupation": "Marketing graduate",
+      "bio": "Clara is a 24-year-old marketing graduate who lives in Hertfordshire after moving from Aveiro, Portugal at 18. She began baking two years ago, recreating Portuguese classics such as tarte de nata for her fiancé's family. Her bakes favour fresh, fruity flavours, and she keeps a spaniel and a pygmy hedgehog.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/CLARA-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "connie",
+      "name": "Connie",
+      "age": 63,
+      "hometown": "London",
+      "occupation": "NHS hospital discharge lead",
+      "bio": "Connie is a 63-year-old NHS hospital discharge lead who lives in London. She cannot remember a time when she did not bake, and treats it as a way to unwind after work. She favours carrot cakes with rum-soaked fruit, lemon and lavender, and runs a music centre with her husband Myke.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/CONNIE-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "danni",
+      "name": "Danni",
+      "age": 25,
+      "hometown": "Dorset",
+      "occupation": "HGV service centre administrator",
+      "bio": "Danni is a 25-year-old HGV service centre administrator who lives in Dorset with their family. Baking grew out of a curiosity for experimenting with new ingredients. They forage ingredients like magnolia, chestnut and dandelion, and pair them with flavours such as ube and red bean paste.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/DANNI-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "gabe",
+      "name": "Gabe",
+      "age": 32,
+      "hometown": "West Midlands",
+      "occupation": "Drag performer, costume designer and theatre producer",
+      "bio": "Gabe is a 32-year-old artist and drag performer who lives in the West Midlands, having been raised in Grimsby. He started baking after watching an earlier series of The Great British Bake Off as a teenager. He favours savoury, meat-filled bakes with a focus on meringue, and also works as a costume designer.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/GABE-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "gary",
+      "name": "Gary",
+      "age": 67,
+      "hometown": "Nottinghamshire (originally from Chesterfield)",
+      "occupation": "Retired garment technologist",
+      "bio": "Gary is a 67-year-old retired garment technologist who lives on a smallholding in Nottinghamshire, born in Chesterfield. He took up baking after buying his first cookbook from a gift shop five years ago. He often bakes with citrus flavours and keeps Border Collies and farm animals on his smallholding.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/GARY-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "mo",
+      "name": "Mo",
+      "age": 21,
+      "hometown": "West Midlands",
+      "occupation": "Law student",
+      "bio": "Mo is a 21-year-old law student who lives in the West Midlands with his family and three cats. He started with pretend baking as a child, then moved on to boxed cake mixes. He combines Asian flavours with British classics, and outside baking he does weightlifting and calisthenics.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/MO-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "molly",
+      "name": "Molly",
+      "age": 31,
+      "hometown": "London",
+      "occupation": "Accessibility coordinator",
+      "bio": "Molly is a 31-year-old accessibility coordinator who lives in London with her husband Ash and their dog Lando. She started baking as a child, inspired by her grandmother, and returned to it during health challenges in 2020. She favours hazelnut, fresh fruit and mint, and outside baking she does cross-stitch.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/MOLLY-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "moyin",
+      "name": "Moyin",
+      "age": 22,
+      "hometown": "Essex",
+      "occupation": "Political economy student",
+      "bio": "Moyin is a 22-year-old political economy student who lives in Essex with family ties to Nigeria, Canada and the USA. He began baking with his mother as a child. His bakes draw on Nigerian heritage flavours such as grains of paradise and groundnuts, and he is a competitive sprinter.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/MOYIN-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "nikki",
+      "name": "Nikki",
+      "age": 50,
+      "hometown": "London",
+      "occupation": "Advertising post-producer",
+      "bio": "Nikki is a 50-year-old advertising post-producer who lives in London and has been with Tom for 22 years. She started baking with her mother as a child and considers baking a form of therapy. She plays R&B while making tried recipes and classical music while experimenting.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/NIKKI-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "shannon",
+      "name": "Shannon",
+      "age": 29,
+      "hometown": "Gloucestershire (grew up in Bristol)",
+      "occupation": "Project planner and scheduler",
+      "bio": "Shannon is a 29-year-old project planner and scheduler who lives in the Gloucestershire countryside, having grown up in Bristol. Her grandmother taught her to bake, and she has been baking for as long as she can remember. She cooks with homegrown ingredients from her garden and keeps a tortoise named Tyrone.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/SHANNON-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "tom",
+      "name": "Tom",
+      "age": 25,
+      "hometown": "West Yorkshire",
+      "occupation": "Hairdresser",
+      "bio": "Tom is a 25-year-old hairdresser who lives in West Yorkshire and works in a busy salon. He learned to bake as a child at his nan's house. Salted caramel brownies are among his regular bakes, and he recently spent seven months travelling around Southeast Asia.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/TOM-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    },
+    {
+      "id": "yannis",
+      "name": "Yannis",
+      "age": 28,
+      "hometown": "London (born in Vienna, moved to UK at 11)",
+      "occupation": "Paediatric doctor",
+      "bio": "Yannis is a 28-year-old paediatric doctor who lives in London, having been born in Vienna and moved there at 11. His first baking memory is making bhapa pitha with his grandmother. His baking draws on both Austrian and Bangladeshi traditions, and outside the kitchen he is a bhangra dancer.",
+      "photo": "https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2026/09/YANNIS-Anno-CLEAN_GBBO_S17_PreTX_1x1-450x450.jpg"
+    }
+  ]
+}

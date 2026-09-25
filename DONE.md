@@ -8,7 +8,8 @@ Confirmed by Graham 2026-09-25. Verify finished work against this file.
 - Draft happens on one screen, both people together ("one screen").
 - Draft format: random pick for who goes first, then alternate turns until 6 each
   (Graham: "Alternate draft where we randomly picked who went first and then take
-  turns going back and forth").
+  turns going back and forth"). Snake draft considered and declined 2026-09-25
+  ("Straight alternation for draft picks").
 - Viewing: Netflix in the US, behind the UK broadcast.
 - Spoiler scrub: Graham, verbatim: "I need you to REALLY scrub with 2 agents to ensure
   no spoilers leak into the draft page."
@@ -17,17 +18,23 @@ Confirmed by Graham 2026-09-25. Verify finished work against this file.
 
 ## Done when
 
-- [ ] Draft page live on GitHub Pages with all 12 bakers of the 2026 lineup, each with a
+- [x] Draft page live on GitHub Pages with all 12 bakers of the 2026 lineup, each with a
       photo and a short bio sourced only from pre-premiere announcement material.
-- [ ] A random coin flip decides who picks first; picks alternate until each has 6.
+      (Live 2026-09-25; 12 cards, 12 photos loaded, served bakers.json checksum equals
+      the scrubbed commit.)
+- [x] A random coin flip decides who picks first; picks alternate until each has 6.
 - [ ] Finishing the draft produces a one-line summary that, pasted into the repo chat,
-      fills both teams on the points page.
-- [ ] Points page shows both teams and totals computed from the data file, with a card
+      fills both teams on the points page. (Summary verified with test bakers; the paste
+      into the repo chat is unproven until the first real draft.)
+- [x] Points page shows both teams and totals computed from the data file, with a card
       per week (technical winner and loser, Star Baker, handshakes, eliminated).
-- [ ] Proven by a full test draft and one test episode with totals checked, then both
-      cleared.
-- [ ] Two independent agents scrub the live draft page (text, data file, photos, order,
-      alt text, repo contents) and both return PASS with no spoiler found.
+- [x] Proven by a full test draft and one test episode with totals checked, then both
+      cleared. (Test bakers, labelled as such, in the scratchpad; two test weeks scored
+      Graham 8, Lauren 5, matching a hand count; check.mjs failed a planted bad file.)
+- [x] Two independent agents scrub the live draft page (text, data file, photos, order,
+      alt text, repo contents) and both return PASS with no spoiler found. (All 12 bios
+      rewritten to one uniform template after round 1; round 2 on the pushed commit
+      a5b8003: both PASS.)
 
 ## Open
 

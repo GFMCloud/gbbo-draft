@@ -42,6 +42,7 @@ const gone = new Map();
 season.weeks.forEach((week, i) => {
   const where = `week ${week.week}`;
   if (week.week !== i + 1) fail(`weeks must run 1, 2, 3... in order; entry ${i + 1} is week ${week.week}`);
+  if (week.technical_winner && week.technical_winner === week.technical_last) fail(`${where}: the same baker cannot win and come last in the technical`);
   if ("survived" in week) fail(`${where}: "survived" is computed from eliminations; remove it`);
   const winner = asList(week.winner);
   if (winner.length > 1) fail(`${where}: only one winner`);

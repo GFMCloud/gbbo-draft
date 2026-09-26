@@ -19,15 +19,21 @@ It starts with `GBBO 2026 draft complete.` Write `draft.first_pick`, `draft.orde
 
 ## Episode message
 
-Graham reports: technical winner, technical last, Star Baker, handshakes, who went
-home. Append one object to `weeks`:
+Usually pasted from the Log results page (`results.html`): it starts with
+`GBBO 2026 week N results.` and ends with a `Data:` line holding the exact week object.
+Append that object to `weeks` as given; the lines above it are the human-readable copy.
+If `N` is not the next week number, ask before writing.
+
+Otherwise Graham reports in plain words: technical winner, technical last, Star Baker,
+handshakes, who went home. Append one object to `weeks`:
 
 ```json
 { "week": 1, "theme": "Cake", "technical_winner": "<id>", "technical_last": "<id>",
   "star_baker": ["<id>"], "handshakes": ["<id>"], "eliminated": ["<id>"] }
 ```
 
-Lists allow joint Star Bakers, several handshakes, or a double elimination. Use `[]`
+Lists allow joint Star Bakers, several handshakes (repeat an id for a baker who gets
+more than one in an episode), or a double elimination. Use `[]`
 when nothing happened. A baker who leaves for any reason (including illness) goes in
 `eliminated`. Survival points are computed from `eliminated`; never store them.
 

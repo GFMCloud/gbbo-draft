@@ -77,9 +77,10 @@ function render(bakers, season) {
           return [
             el("dt", {}, label + suffix),
             el("dd", {}, ids.length
-              ? ids.map((id) => {
+              ? [...new Set(ids)].map((id) => {
                   const team = ownerOf(season, id);
-                  return el("span", { class: `chip${team ? ` team-${team}` : ""}` }, byId[id]?.name || id);
+                  const n = ids.filter((x) => x === id).length;
+                  return el("span", { class: `chip${team ? ` team-${team}` : ""}` }, (byId[id]?.name || id) + (n > 1 ? ` ×${n}` : ""));
                 })
               : el("span", { class: "muted" }, "None")),
           ];

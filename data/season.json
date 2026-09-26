@@ -10,12 +10,87 @@
     "winner": 5
   },
   "draft": {
-    "first_pick": null,
-    "order": []
+    "first_pick": "lauren",
+    "order": [
+      {
+        "pick": 1,
+        "team": "lauren",
+        "baker": "gary"
+      },
+      {
+        "pick": 2,
+        "team": "graham",
+        "baker": "yannis"
+      },
+      {
+        "pick": 3,
+        "team": "lauren",
+        "baker": "mo"
+      },
+      {
+        "pick": 4,
+        "team": "graham",
+        "baker": "tom"
+      },
+      {
+        "pick": 5,
+        "team": "lauren",
+        "baker": "clara"
+      },
+      {
+        "pick": 6,
+        "team": "graham",
+        "baker": "molly"
+      },
+      {
+        "pick": 7,
+        "team": "lauren",
+        "baker": "nikki"
+      },
+      {
+        "pick": 8,
+        "team": "graham",
+        "baker": "connie"
+      },
+      {
+        "pick": 9,
+        "team": "lauren",
+        "baker": "moyin"
+      },
+      {
+        "pick": 10,
+        "team": "graham",
+        "baker": "shannon"
+      },
+      {
+        "pick": 11,
+        "team": "lauren",
+        "baker": "gabe"
+      },
+      {
+        "pick": 12,
+        "team": "graham",
+        "baker": "danni"
+      }
+    ]
   },
   "teams": {
-    "graham": [],
-    "lauren": []
+    "graham": [
+      "yannis",
+      "tom",
+      "molly",
+      "connie",
+      "shannon",
+      "danni"
+    ],
+    "lauren": [
+      "gary",
+      "mo",
+      "clara",
+      "nikki",
+      "moyin",
+      "gabe"
+    ]
   },
   "weeks": []
 }

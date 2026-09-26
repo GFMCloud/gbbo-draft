@@ -92,5 +92,17 @@
       "gabe"
     ]
   },
-  "weeks": []
+  "weeks": [
+    {
+      "week": 1,
+      "theme": "Cake Week",
+      "technical_winner": "tom",
+      "technical_last": "molly",
+      "star_baker": [
+        "mo"
+      ],
+      "handshakes": [],
+      "eliminated": []
+    }
+  ]
 }

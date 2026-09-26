@@ -36,10 +36,16 @@ Confirmed by Graham 2026-09-25. Verify finished work against this file.
       rewritten to one uniform template after round 1; round 2 on the pushed commit
       a5b8003: both PASS.)
 
-## Open
+## Scoring (decided 2026-09-25)
 
-- Scoring system: same as 2023 to 2025 (Star Baker +3, handshake +2, technical win +1,
-  technical last -1) unless Graham adopts a change from the scoring research.
+Graham: "update the scoring based on the survival and finale points you suggested".
+Star Baker +3, handshake +2 each, technical win +1, technical last -1, plus +1 per week
+survived (computed from eliminations; a week with no elimination counts for everyone
+still in), +3 for reaching the final, +5 more for winning.
+
+- [x] Points page and check.mjs score survival and finale points; proven on test data
+      against a hand count, including a final week. (Test bakers: Graham 35, Lauren 21,
+      matching the hand count; check.mjs failed three planted finale and survival errors.)
 
 ## Not this time
 

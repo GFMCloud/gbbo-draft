@@ -4,7 +4,10 @@
     "star_baker": 3,
     "handshakes": 2,
     "technical_winner": 1,
-    "technical_last": -1
+    "technical_last": -1,
+    "survived": 1,
+    "finalists": 3,
+    "winner": 5
   },
   "draft": {
     "first_pick": null,

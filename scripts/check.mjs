@@ -33,15 +33,19 @@ if (graham.length || lauren.length) {
   }
 }
 
-const EVENT_KEYS = ["technical_winner", "technical_last", "star_baker", "handshakes", "eliminated"];
+const EVENT_KEYS = ["technical_winner", "technical_last", "star_baker", "handshakes", "eliminated", "finalists", "winner"];
 for (const key of Object.keys(season.scoring)) {
-  if (!EVENT_KEYS.includes(key)) fail(`scoring key "${key}" is not a week field`);
+  if (!EVENT_KEYS.includes(key) && key !== "survived") fail(`scoring key "${key}" is not a week field`);
 }
 
 const gone = new Map();
 season.weeks.forEach((week, i) => {
   const where = `week ${week.week}`;
   if (week.week !== i + 1) fail(`weeks must run 1, 2, 3... in order; entry ${i + 1} is week ${week.week}`);
+  if ("survived" in week) fail(`${where}: "survived" is computed from eliminations; remove it`);
+  const winner = asList(week.winner);
+  if (winner.length > 1) fail(`${where}: only one winner`);
+  if (winner.length && !asList(week.finalists).includes(winner[0])) fail(`${where}: the winner must also be listed in finalists`);
   for (const key of EVENT_KEYS) {
     for (const id of asList(week[key])) {
       known(id, `${where} ${key}`);
@@ -50,6 +54,7 @@ season.weeks.forEach((week, i) => {
   }
   for (const id of asList(week.eliminated)) gone.set(id, week.week);
 });
+if (season.weeks.filter((w) => asList(w.finalists).length).length > 1) fail("finalists may be set in one week only");
 
 if (errors.length) {
   console.error(`FAILED (${errors.length}):\n- ${errors.join("\n- ")}`);

@@ -1,16 +1,19 @@
 import { TEAMS, loadJSON, el, avatar } from "./common.js";
-import { asList, ownerOf, score } from "./scoring.js";
+import { asList, ownerOf, score, survivors } from "./scoring.js";
 
 const app = document.getElementById("app");
 
-// Week fields shown on each week card, in display order.
+// Week fields shown on each week card, in display order. Finale rows show only when set.
 const EVENTS = [
   { key: "star_baker", label: "Star Baker" },
   { key: "handshakes", label: "Handshake" },
   { key: "technical_winner", label: "Technical win" },
   { key: "technical_last", label: "Technical last" },
   { key: "eliminated", label: "Went home" },
+  { key: "finalists", label: "Reached the final", finale: true },
+  { key: "winner", label: "Won the series", finale: true },
 ];
+const LABELS = { ...Object.fromEntries(EVENTS.map((e) => [e.key, e.label])), survived: "Each week survived" };
 
 function eliminatedWeek(season, id) {
   const week = season.weeks.find((w) => asList(w.eliminated).includes(id));
@@ -62,12 +65,12 @@ function render(bakers, season) {
   );
 
   const weekCards = season.weeks
-    .map((week, i) => ({ week, swing: weekPoints[i] }))
+    .map((week, i) => ({ week, swing: weekPoints[i], stillIn: survivors(season, i).length }))
     .reverse()
-    .map(({ week, swing }) => el("article", { class: "panel week" },
+    .map(({ week, swing, stillIn }) => el("article", { class: "panel week" },
       el("h3", {}, `Week ${week.week}${week.theme ? `: ${week.theme}` : ""}`),
       el("dl", {},
-        EVENTS.flatMap(({ key, label }) => {
+        EVENTS.filter(({ key, finale }) => !finale || asList(week[key]).length).flatMap(({ key, label }) => {
           const ids = asList(week[key]);
           const value = season.scoring[key];
           const suffix = value ? ` (${value > 0 ? "+" : ""}${value})` : "";
@@ -81,6 +84,10 @@ function render(bakers, season) {
               : el("span", { class: "muted" }, "None")),
           ];
         }),
+        season.scoring.survived ? [
+          el("dt", {}, `Survived (${fmt(season.scoring.survived)} each)`),
+          el("dd", {}, `${stillIn} bakers still in`),
+        ] : [],
       ),
       el("div", { class: "swing" }, `This week: Graham ${fmt(swing.graham)}, Lauren ${fmt(swing.lauren)}`),
     ));
@@ -88,7 +95,7 @@ function render(bakers, season) {
   const scoringNote = el("p", { class: "muted" },
     "Scoring: ",
     Object.entries(season.scoring)
-      .map(([key, v]) => `${EVENTS.find((e) => e.key === key)?.label || key} ${fmt(v)}`)
+      .map(([key, v]) => `${LABELS[key] || key} ${fmt(v)}`)
       .join(", "),
     ".",
   );

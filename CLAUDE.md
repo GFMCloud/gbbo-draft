@@ -28,7 +28,11 @@ home. Append one object to `weeks`:
 ```
 
 Lists allow joint Star Bakers, several handshakes, or a double elimination. Use `[]`
-when nothing happened. Map every name to an id in `data/bakers.json`; if a name does
+when nothing happened. A baker who leaves for any reason (including illness) goes in
+`eliminated`. Survival points are computed from `eliminated`; never store them.
+
+For the final episode only, also add `"finalists": ["<id>", "<id>", "<id>"]` and
+`"winner": "<id>"` (the winner is one of the finalists), with `"eliminated": []`. Map every name to an id in `data/bakers.json`; if a name does
 not match exactly one baker, ask instead of guessing. Correct an earlier week by
 editing it in place.
 

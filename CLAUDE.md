@@ -34,8 +34,9 @@ handshakes, who went home. Append one object to `weeks`:
 
 Lists allow joint Star Bakers, several handshakes (repeat an id for a baker who gets
 more than one in an episode), or a double elimination. Use `[]`
-when nothing happened. A baker who leaves for any reason (including illness) goes in
-`eliminated`. Survival points are computed from `eliminated`; never store them.
+when nothing happened. `eliminated` lists only bakers who are out of the competition for
+good: sent home by the judges, or withdrawn permanently. A baker who misses an
+episode and returns is not eliminated. Survival points are computed from `eliminated`; never store them.
 
 For the final episode only, also add `"finalists": ["<id>", "<id>", "<id>"]` and
 `"winner": "<id>"` (the winner is one of the finalists), with `"eliminated": []`. Map every name to an id in `data/bakers.json`; if a name does

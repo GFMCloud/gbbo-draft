@@ -23,9 +23,9 @@ Confirmed by Graham 2026-09-25. Verify finished work against this file.
       (Live 2026-09-25; 12 cards, 12 photos loaded, served bakers.json checksum equals
       the scrubbed commit.)
 - [x] A random coin flip decides who picks first; picks alternate until each has 6.
-- [ ] Finishing the draft produces a one-line summary that, pasted into the repo chat,
-      fills both teams on the points page. (Summary verified with test bakers; the paste
-      into the repo chat is unproven until the first real draft.)
+- [x] Finishing the draft produces a one-line summary that, pasted into the repo chat,
+      fills both teams on the points page. (Real draft pasted 2026-09-25; both teams
+      live on the points page, draft page shows "The draft is done".)
 - [x] Points page shows both teams and totals computed from the data file, with a card
       per week (technical winner and loser, Star Baker, handshakes, eliminated).
 - [x] Proven by a full test draft and one test episode with totals checked, then both

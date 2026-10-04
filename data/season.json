@@ -103,6 +103,19 @@
       ],
       "handshakes": [],
       "eliminated": []
+    },
+    {
+      "week": 2,
+      "theme": "Biscuit Week",
+      "technical_winner": "connie",
+      "technical_last": "gary",
+      "star_baker": [
+        "tom"
+      ],
+      "handshakes": [],
+      "eliminated": [
+        "danni"
+      ]
     }
   ]
 }

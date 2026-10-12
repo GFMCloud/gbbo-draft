@@ -22,7 +22,9 @@ It starts with `GBBO 2026 draft complete.` Write `draft.first_pick`, `draft.orde
 Usually pasted from the Log results page (`results.html`): it starts with
 `GBBO 2026 week N results.` and ends with a `Data:` line holding the exact week object.
 Append that object to `weeks` as given; the lines above it are the human-readable copy.
-If `N` is not the next week number, ask before writing.
+Run `git pull --ff-only origin main` first: weeks are also recorded from other
+sessions, so the local copy can be behind. If `N` is not the next week number, ask
+before writing.
 
 Otherwise Graham reports in plain words: technical winner, technical last, Star Baker,
 handshakes, who went home. Append one object to `weeks`:

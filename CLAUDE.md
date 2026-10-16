@@ -1,3 +1,6 @@
+General working agreements live in `~/.claude/CLAUDE.md`. This file adds only what is
+specific to `gbbo-draft`.
+
 # Bake Off draft: instructions for the repo chat
 
 Graham and Lauren watch The Great British Bake Off on US Netflix, behind the UK
@@ -49,6 +52,7 @@ editing it in place.
 
 Run `node scripts/check.mjs`. It must print `OK`. Then reply with the week's point
 swing and both totals it prints, commit `data/season.json` with a message like
-`Week 3 results`, and push to `main`. The page updates about a minute after the push.
+`Week 3 results`, and push to `main` (under the global push carve-out). The page updates
+about a minute after the push.
 
 Points are computed by the page from `scoring`; never store totals.
